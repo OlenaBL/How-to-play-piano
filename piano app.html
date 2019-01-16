@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>The Vitamin Band program</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="main.js"></script>
+
+<style>
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Special Elite', cursive;
+  line-height: 2em;
+}
+.title {
+  font-size: 60px;
+  font-weight: bold;
+  color: dark;
+  line-height: 1.5em;
+}
+nav {
+  width: 100%;
+  margin: auto 0;
+  padding: 70px 200px;
+}
+nav ul li {
+  display: inline;
+  font-size: 34px;
+  color: rgba(191, 15, 15, 1);
+}
+nav ul li a {
+  display: inline;
+  font-size: 30px;
+  padding: 50px;
+  color: rgba(191, 15, 15, 0.85);
+}
+#piano {
+  width: 874px;
+  margin: 0 auto;
+  height: 400px;
+  background-color: transparent;
+  border: 2px solid black;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.white-keys {
+  position: relative;
+  width: 115px;
+  height: 400px;
+  background-color: white;
+  border: 2px solid black;
+  cursor: pointer; position: relative;
+  width: 115px;
+  height: 400px;
+  background-color: white;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+.black-keys {
+  width: 70px;
+  height: 200px;
+  position: relative;
+  margin: 2px -40px;
+  background-color: black;
+  border: 3px solid white;
+  border-top: none;
+  border-bottom: none;
+  z-index: 2;
+}
+
+.white-keys h1 {
+  padding-top: 250px;
+  font-weight: bold;
+}
+
+img {
+  width: 65px;
+  height: auto;
+  position: relative;
+  margin: 10px;
+ }
+
+#piano_2 {
+  width: 874px;
+  margin: 0 auto;
+  height: 400px;
+  background-color: transparent;
+  border: 2px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  }
+
+#img_2 {
+ width: 100px;
+ height: auto;
+ padding-top: 280px;
+ opacity: 0.1;
+ }
+
+h1 {
+  text-align: center;
+  font-weight: bold;
+  }
+h2 {
+  text-align: center;
+  line-height: 2em;
+  padding-bottom: 50px;
+  }
+
+.text {
+  text-align: center;
+  line-height: 2em;
+  padding-bottom: 40px;
+  
+}
+h3 {
+  text-align: center;
+  font-family: "Roboto";
+  font-weight: 800px;
+  margin-top: 200px;
+}
+
+footer {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 32px;
+  margin-top: 100px;
+  color: rgba(191, 15, 15, 1);
+}
+
+#btn {
+  color: dark;
+  background-color: rgba(191, 15, 15, 0.9);
+  border-radius: 50%;
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+  font-size: 14px;
+  font-weight: bold;
+  border: 3px solid rgba(191, 15, 15, 0.9);
+  position: fixed;
+  bottom: 10px; 
+  right: 50px; 
+  z-index: 99; 
+  }
+#btn:hover {
+  background-color: white;
+}
+
+#container {
+  width: 874px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  align-content: space-around;
+  text-align: center;
+}
+
+p {
+  font-size: 20px;
+  font-weight: bold;
+  color: dark;
+}
+section {
+  margin-top: 100px;
+}
+
+.note_box {
+ padding: 15px;
+ margin-top: 10px;
+ width: 75%;
+ }
+
+</style>
+  <title>The Vitamin Band Music Program</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+
+ <body>
+ <header>
+    <nav>
+      <ul type="none">
+        <li><a href="#step_1" class="nav-link">step 1: try to play our piano</a></li>
+        <li><a href="#step_2" class="nav-link">step 2: learn the notes</a></li>
+        <li><a href="#step_3" class="nav-link">step 3: try to play independently!</a></li>
+      </ul>
+    </nav>
+    <h1 class="title">Want to learn to play piano? <br>Meet "The Vitamin Band music program"!</h1>
+  </header>
+  <!--Step 1-->
+  <section id="step_1">
+    <h1>STEP 1</h1>
+    <h2 class="text">Try to play this digital piano, press on the picture of the fruit or vegetable to hear the note Practice, ytu to memorize notes.</h2>
+    <!--piano container-->
+    <div id="piano">
+      <!--note do -->
+      <div class="white-keys">
+        <h1>do</h1>
+        <img src="https://res.cloudinary.com/olena/image/upload/v1541739315/TOMATO.jpg" onclick="playNoteDo.play()">
+      </div>
+      <div class="black-keys"></div>
+      <!--note re -->
+      <div class="white-keys">
+        <h1>re</h1>
+        <img src="https://res.cloudinary.com/olena/image/upload/v1541739330/ORANGE_new.jpg" onclick="playNoteRe.play()">
+      </div>
+      <div class="black-keys"></div>
+      <!--note mi -->
+      <div class="white-keys">
+        <h1>mi</h1>
+        <img src="https://res.cloudinary.com/olena/image/upload/v1544641409/watermelon.jpg" onclick="playNoteMi.play()">
+      </div>
+      <!--note fa -->
+      <div class="white-keys">
+        <h1>fa</h1>
+        <img src="https://res.cloudinary.com/olena/image/upload/v1544641414/APRICOT.jpg" onclick="playNoteFa.play()">
+      </div>
+      <div class="black-keys"></div>
+      <!--note sol -->
+      <div class="white-keys">
+        <h1>sol</h1>
+        <img src="https://res.cloudinary.com/olena/image/upload/v1541798388/SALAD.jpg" onclick="playNoteSol.play()">
+      </div>
+      <div class="black-keys"></div>
+      <!--note la -->
+      <div class="white-keys">
+        <h1>la</h1>
+        <img src="https://res.cloudinary.com/olena/image/upload/v1541739330/BROCCOLI.jpg" onclick="playNoteLa.play()">
+      </div>
+      <div class="black-keys"></div>
+      <!--note ti -->
+      <div class="white-keys">
+        <h1>ti</h1>
+        <img src="https://res.cloudinary.com/olena/image/upload/v1541739300/carrots-1586302_1920.png" onclick="playNoteTi.play()">
+      </div>
+
+      <!--note do -->
+      <div class="white-keys">
+        <h1>do</h1>
+        <img src="https://res.cloudinary.com/olena/image/upload/v1541739315/TOMATO.jpg" onclick="playNoteHighDo.play()">
+      </div>
+    </div>
+  </section>
+
+  <!--Step 2 -->
+<section id="step_2">
+  <h1>STEP 2</h1>
+  <h2 class="text">Meet "The Vitamin Band"</h2>
+
+  <div id="container">
+<!--TomaDO intro-->
+<div class="note_box">
+<img src="https://res.cloudinary.com/olena/image/upload/v1541739315/TOMATO.jpg" alt="red tomato">
+<p>Toma-DO</p>
+</div>
+<!--o-RE-nge intro-->
+<div class="note_box">
+<img src="https://res.cloudinary.com/olena/image/upload/v1541739330/ORANGE_new" alt="orange fruit">
+<p>o-RE-nge</p>
+</div>
+<!--water-MI-lon intro-->
+<div class="note_box">
+<img src="https://res.cloudinary.com/olena/image/upload/v1544641409/watermelon.jpg" alt="watermelon">
+<p>Water-MI-lon</p>
+</div>
+<!--FA-pricot intro-->
+<div class="note_box">
+<img src="https://res.cloudinary.com/olena/image/upload/v1544641414/APRICOT.jpg" alt="apricot">
+<p>FA-pricot</p>
+</div>
+<!--sol intro-->
+<div class="note_box">
+<img src="https://res.cloudinary.com/olena/image/upload/v1541798388/SALAD.jpg" alt="lettuce">
+<p>SOL-ad</p>
+</div>
+<!--la intro-->
+<div class="note_box">
+<img src="https://res.cloudinary.com/olena/image/upload/v1541739330/BROCCOLI.jpg" alt="broccoli">
+<p>Brocco-LA</p>
+</div>
+<!--carroTI intro-->
+<div class="note_box">
+<img src="https://res.cloudinary.com/olena/image/upload/v1541739300/carrots-1586302_1920.png" alt="carrot">
+<p>Carro-TI</p>
+</div>
+<!--TomaDO intro-->
+<div class="note_box">
+<img src="https://res.cloudinary.com/olena/image/upload/v1541739315/TOMATO.jpg" alt="red tomato">
+<p>Toma-DO</p>
+</div>
+</div>>
+</section>
+
+  <!---Step 3-->
+ <section id="step_3">
+    <h1>STEP 3</h1>
+    <h2 class="text">Try to play the digital piano all by yourself! If you get stuck, go back to steps 1 and 2. Have FUN!</h2>
+   <!--piano conatiner-->
+    <div id="piano_2">
+      <!--note do -->
+      <div class="white-keys">
+        <img src="https://res.cloudinary.com/olena/image/upload/v1541739315/TOMATO.jpg" onclick="playNoteDo.play()" id="img_2">
+      </div>
+      <div class="black-keys"></div>
+      <!--note re -->
+      <div class="white-keys">
+        <img src="https://res.cloudinary.com/olena/image/upload/v1541739330/ORANGE_new.jpg" onclick="playNoteRe.play()" id="img_2">
+      </div>
+      <div class="black-keys"></div>
+      <!--note mi -->
+      <div class="white-keys">
+        <img src="https://res.cloudinary.com/olena/image/upload/v1541739329/watermelon.jpg" onclick="playNoteMi.play()" id="img_2">
+      </div>
+      <!--note fa -->
+      <div class="white-keys">
+        <img src="https://res.cloudinary.com/olena/image/upload/v1541739327/APRICOT.jpg" onclick="playNoteFa.play()" id="img_2">
+      </div>
+      <div class="black-keys"></div>
+      <!--note sol -->
+      <div class="white-keys">
+        <img src="https://res.cloudinary.com/olena/image/upload/v1541798388/SALAD.jpg" onclick="playNoteSol.play()" id="img_2">
+      </div>
+      <div class="black-keys"></div>
+      <!--note la -->
+      <div class="white-keys">
+        <img src="https://res.cloudinary.com/olena/image/upload/v1541739330/BROCCOLI.jpg" onclick="playNoteLa.play()" id="img_2">
+      </div>
+      <div class="black-keys"></div>
+      <!--note ti -->
+      <div class="white-keys">
+        <img src="https://res.cloudinary.com/olena/image/upload/v1541739300/carrots-1586302_1920.png" onclick="playNoteTi.play()" id="img_2">
+      </div>
+
+      <!--note do -->
+      <div class="white-keys">
+        <img src="https://res.cloudinary.com/olena/image/upload/v1541739315/TOMATO.jpg" onclick="playNoteDo.play()" id="img_2">
+      </div>
+    </div>
+  </section>
+  
+  <!--button  to the top -->
+  <button onclick="upFunction()" id="btn" title="back to the top">back to the top</button>
+  <!-- footer section -->
+  <footer>&copy 2018 The Vitamin Band Music Program<br>All rights reserved</footer>
+</body>
+</html>
